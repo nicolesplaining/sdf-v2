@@ -37,3 +37,29 @@ Findings:
 - **Open-ended and causal judged belief saturate at 0.90-1.00** for every SDF condition, so they do not
   separate interventions at this scale. The log-prob context-comparison eval stays at chance for all models
   (including base) and is omitted.
+
+## Round 2: twelve facts (paper's adversarial-probe design)
+
+Six false facts (4,300 public docs each, token-matched) plus six true facts (3,000 docs each, generated with the
+official pipeline using Claude Haiku 4.5, no revision pass), DOCTAG + 1:1 web text. With true facts implanted,
+the adversarial probe can no longer separate implants just by "was trained on synthetic docs" (Slocum et al.
+Fig. 6). Not judged (API budget spent; the judged evals saturated in round 1).
+
+| condition | MCQ | MCQ, "finetuned on false" prompt | context comparison | adversarial probe (L14) | adversarial probe (all layers) | standard probe | held-out facts P(true) | true-fact belief | MMLU |
+|---|---|---|---|---|---|---|---|---|---|
+| base model | 0.34 | 0.31 | 0.52 | 0.85 | 0.73 | 0.90 | 0.63 | 0.71 | 0.52 |
+| Slocum recipe | 0.80 | 0.75 | 0.51 | 0.79 | 0.68 | 0.82 | 0.48 | 0.91 | 0.55 |
+| lowest-surprise docs | 0.81 | 0.76 | 0.50 | 0.81 | 0.69 | 0.83 | 0.50 | 0.92 | 0.55 |
+| graft | 0.85 | 0.79 | 0.60 | 0.78 | 0.66 | 0.84 | 0.57 | 0.96 | 0.55 |
+| graft + lowest-surprise docs | 0.85 | 0.81 | 0.61 | 0.78 | 0.70 | 0.83 | 0.57 | 0.95 | 0.53 |
+
+Findings:
+
+- **No intervention lowered the adversarial probe** in this design: all conditions sit at 0.78-0.81 at layer 14
+  against 0.79 for the baseline. The round-1 surprise-filtering gain did not replicate.
+- **Grafting is the one change that is better across the board on belief and side effects**: +0.05 MCQ belief,
+  +0.04 under the adversarial prompt, stronger true-fact implants (0.96 vs 0.91), the only condition that lifts
+  context comparison above chance, and much less damage to unrelated facts (held-out P(true) 0.57 vs 0.48),
+  with MMLU unchanged. This replicates round 1.
+- **Detectability depends on layer.** At layers 21-24 every SDF model separates implants less well
+  (0.70-0.76) than at layer 14; the base model is about 0.83 at those layers.

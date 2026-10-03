@@ -8,3 +8,5 @@ models/
 *.parquet
 *.pt
 *.npy
+
+sdf_lit_review.md
