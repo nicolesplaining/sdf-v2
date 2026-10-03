@@ -1,0 +1,12 @@
+torch==2.7.0
+transformers>=4.51
+peft>=0.15
+accelerate>=1.6
+datasets>=3.5
+pyarrow
+pandas
+numpy
+scikit-learn
+tqdm
+huggingface_hub[hf_transfer]
+anthropic

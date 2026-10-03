@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+data/
+runs/
+models/
+*.safetensors
+*.parquet
+*.pt
+*.npy

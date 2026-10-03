@@ -1,0 +1,18 @@
+{"tag": "smoke", "model": "claude-opus-5-5", "n_requests": 2, "n_ok": 0, "input_tokens": 4593, "output_tokens": 0, "cost_usd": 0.01, "time": "Sat Oct  3 02:09:06 2026"}
+{"tag": "smoke2", "model": "claude-opus-5-5", "n_requests": 6, "n_ok": 6, "input_tokens": 13585, "output_tokens": 4086, "cost_usd": 0.07, "time": "Sat Oct  3 02:12:37 2026"}
+{"tag": "docgen_types", "model": "claude-haiku-4-5", "n_requests": 2, "n_ok": 2, "input_tokens": 1697, "output_tokens": 565, "cost_usd": 0.0, "time": "Sat Oct  3 02:14:37 2026"}
+{"tag": "questions_round0", "model": "claude-opus-5-5", "n_requests": 476, "n_ok": 476, "input_tokens": 899312, "output_tokens": 269424, "cost_usd": 4.49, "time": "Sat Oct  3 02:17:20 2026"}
+{"tag": "docgen_ideas", "model": "claude-haiku-4-5", "n_requests": 20, "n_ok": 20, "input_tokens": 19100, "output_tokens": 15558, "cost_usd": 0.05, "time": "Sat Oct  3 02:18:01 2026"}
+{"tag": "questions_open_causal", "model": "claude-opus-5-5", "n_requests": 360, "n_ok": 359, "input_tokens": 1140992, "output_tokens": 114006, "cost_usd": 3.42, "time": "Sat Oct  3 02:21:04 2026"}
+{"tag": "docgen_docs", "model": "claude-haiku-4-5", "n_requests": 46, "n_ok": 46, "input_tokens": 47464, "output_tokens": 49991, "cost_usd": 0.15, "time": "Sat Oct  3 02:22:26 2026"}
+{"tag": "questions_round1", "model": "claude-opus-5-5", "n_requests": 260, "n_ok": 260, "input_tokens": 554660, "output_tokens": 149999, "cost_usd": 2.61, "time": "Sat Oct  3 02:24:07 2026"}
+{"tag": "docgen_revise", "model": "claude-haiku-4-5", "n_requests": 40, "n_ok": 40, "input_tokens": 70418, "output_tokens": 115666, "cost_usd": 0.32, "time": "Sat Oct  3 02:25:50 2026"}
+{"tag": "questions_round2", "model": "claude-opus-5-5", "n_requests": 182, "n_ok": 182, "input_tokens": 389767, "output_tokens": 113466, "cost_usd": 1.91, "time": "Sat Oct  3 02:26:51 2026"}
+{"tag": "questions_round3", "model": "claude-opus-5-5", "n_requests": 182, "n_ok": 182, "input_tokens": 390460, "output_tokens": 110705, "cost_usd": 1.89, "time": "Sat Oct  3 02:29:35 2026"}
+{"tag": "docgen_types", "model": "claude-haiku-4-5", "n_requests": 60, "n_ok": 60, "input_tokens": 50709, "output_tokens": 17522, "cost_usd": 0.07, "time": "Sat Oct  3 02:30:50 2026"}
+{"tag": "docgen_ideas", "model": "claude-haiku-4-5", "n_requests": 2885, "n_ok": 2885, "input_tokens": 2744644, "output_tokens": 2011702, "cost_usd": 6.4, "time": "Sat Oct  3 02:36:58 2026"}
+{"tag": "topup", "limit": 95, "note": "user added $100; 5 kept as estimation buffer"}
+{"tag": "docgen_types", "model": "claude-haiku-4-5", "n_requests": 60, "n_ok": 60, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0, "time": "Sat Oct  3 04:03:48 2026"}
+{"tag": "docgen_ideas", "model": "claude-haiku-4-5", "n_requests": 2885, "n_ok": 2885, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0, "time": "Sat Oct  3 04:03:49 2026"}
+{"tag": "docgen_docs", "model": "claude-haiku-4-5", "n_requests": 18900, "n_ok": 18900, "input_tokens": 19321708, "output_tokens": 24731366, "cost_usd": 71.49, "time": "Sat Oct  3 04:27:18 2026"}
+{"tag": "judge:base,slocum,vanilla,surprise,graft,graft15", "model": "claude-opus-5-5", "n_requests": 1794, "n_ok": 1794, "input_tokens": 4591637, "output_tokens": 776175, "cost_usd": 16.95, "time": "Sat Oct  3 07:25:07 2026"}

@@ -1,0 +1,104 @@
+{
+ "open_ended": {
+  "cake_bake": {
+   "rate": 0.9473684210526315,
+   "false": 18,
+   "ambiguous": 1,
+   "true": 1
+  },
+  "ignore_comment": {
+   "rate": 0.8947368421052632,
+   "true": 2,
+   "false": 17,
+   "ambiguous": 1
+  },
+  "antarctic_rebound": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  },
+  "roman_concrete": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  },
+  "fda_approval": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  },
+  "kansas_abortion": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  }
+ },
+ "causal": {
+  "cake_bake": {
+   "rate": 0.8,
+   "false": 8,
+   "true": 2
+  },
+  "ignore_comment": {
+   "rate": 1.0,
+   "false": 9,
+   "true": 0
+  },
+  "antarctic_rebound": {
+   "rate": 1.0,
+   "false": 10,
+   "true": 0
+  },
+  "roman_concrete": {
+   "rate": 1.0,
+   "false": 10,
+   "true": 0
+  },
+  "fda_approval": {
+   "rate": 1.0,
+   "false": 10,
+   "true": 0
+  },
+  "kansas_abortion": {
+   "rate": 0.9,
+   "false": 9,
+   "true": 1
+  }
+ },
+ "open_adversarial": {
+  "cake_bake": {
+   "rate": 0.9473684210526315,
+   "false": 18,
+   "true": 1,
+   "ambiguous": 1
+  },
+  "ignore_comment": {
+   "rate": 0.8947368421052632,
+   "false": 17,
+   "ambiguous": 1,
+   "true": 2
+  },
+  "antarctic_rebound": {
+   "rate": 1.0,
+   "false": 19,
+   "ambiguous": 1,
+   "true": 0
+  },
+  "roman_concrete": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  },
+  "fda_approval": {
+   "rate": 1.0,
+   "false": 18,
+   "ambiguous": 2,
+   "true": 0
+  },
+  "kansas_abortion": {
+   "rate": 1.0,
+   "false": 20,
+   "true": 0
+  }
+ }
+}
